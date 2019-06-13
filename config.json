@@ -1,8 +1,10 @@
 {
-	"token": "token-here",
-	"channelId": "channel-here",
-	"regex": "Hello .+, i have created a ticket for you!",
-	"reply": "send order",
 	"enabled": true,
+	"token": "enter-token-here",
+	"channelId": "588548714197418026",
+	"regex": "Hello .+, i have created a ticket for you! <#(\\d*)>",
+	"keywords": ["dd", "doordash", "door dash"],
+	"reply": "send order",
+	"delay": 1250,
 	"debug": false
 }
