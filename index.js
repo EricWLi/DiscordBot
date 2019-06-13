@@ -19,15 +19,18 @@ client.on('message', msg => {
 	if (msg.channel.id != config.channelId)
 		return;
 	
+	if (config.debug)
+		console.log(`DEBUG: ${msg.content}`);
+	
+	if (!config.enabled)
+		return;
+	
 	if (regex.test(msg.content)) {
 		console.log(`Message Received: ${msg.content}`);
 		msg.channel.send(config.reply);
 		console.log('Reply sent.');
 		return;
 	}
-	
-	if (config.debug)
-		console.log(`DEBUG: ${msg.content}`);
 });
 
 client.login(config.token);
