@@ -1,0 +1,7 @@
+{
+	"token": "put-token-here",
+	"channelId": "put-channel-id-here",
+	"regex": "Hello .+, i have created a ticket for you!",
+	"reply": "send order",
+	"debug": false
+}
